@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="header">
+      <div class="container">
+          <nav>
+               <h1 id="logo"><span class="high">N</span>agaraj.</h1>
+               <ul id="sidemenu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#projects">My Work</a></li>
+                  <li><a href="#certificates">Certificates</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+        </div>
+        <div class="header-text">
+            
+            <h1>Hi, I'm Nagaraj <span class="auto-type"></span></h1>
+             
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image1.JPG" alt="photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="me">To have a growth-oriented and challenging career, where I can contribute my knowledge and skill to the organization
+                        and enhance my experience through continues learning and teamwork. A quick learner with a passion for continuous
+                        growth and development, seeking an opportunity to learn, adapt, and make meaningful contributions.</p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul >
+                                <li>PYTHON</li>
+                                <li>DJANGO</li>
+                                <li>JAVASCRIPT</li>
+                                <li>HTML & CSS</li>
+                                <li>DBMS & SQL</li>
+                                <li>AWS</li>
+                            </ul>
+
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul >
+                                <li><span class="edu">Master of Computer Application(2023-24)</span><br>National Institute of Engineering, Mysore</li>
+                                <li><span class="edu">Bachelor of Computer Application(2019-22)</span><br>Bapuji Institute of Hi-Tech Education, Davanagere</li>
+                               
+
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-------------------------------projects------------------------------>
+<div id="projects">
+    <div class="container1">
+        <div id="sub"> <h1 class="sub-ptitle">My Work</h1></div>
+       
+        <div class="project-box" id="box1">
+            <h3 class="year"> BlogWebsite</h3>
+            <p class="details">Built a responsive blog website using Django, HTML, CSS, and Python, featuring dynamic content management and user-friendly navigation. Focused on clean, efficient code to ensure seamless user experience and fast loading times. <a class="work" href=" https://github.com/nagarajgb11/blogWebsite">click here</a></p>
+        </div>
+        <div class="project-box" id="box3">
+            <h3 class="year"> ToDoList Website</h3>
+            <p class="details">Developed a task-oriented To-Do List application using Django, HTML, CSS, and Python, with intuitive UI and CRUD functionality. Enabled efficient task management, prioritization, and real-time status updates for users. <a class="work"href="https://github.com/nagarajgb11/ToDoList">click here</a></p>
+        </div>
+        <div class="project-box" id="box2">
+            <h3 class="year"> LEARN INTEGRATED CODING PLATFORM</h3>
+            <p class="details">In this web application, users have the ability to write and execute code, receiving compile-time outputs. Additionally, there is a blogging area where users can post queries and share their thoughts. <a class="work"href="#">click here</a></p>
+        </div>
+        
+        <div id="second-row">
+        <div class="project-box hidden" id="box4">
+            <h3 class="year">Weather Forecasting app</h3>
+            <p class="details">Created a Weather Forecasting app with HTML, CSS, and JavaScript, delivering real-time weather data through a clean, interactive interface. Integrated API for accurate forecasts, enhancing user engagement with dynamic visuals. <a class="work" href="https://nagarajgb11.github.io/WeatherForecasting/">click here</a></p>
+        </div>
+        <div class="project-box hidden" id="box5">
+            <h3 class="year">Text To Voice Convertor</h3>
+            <p class="details">Developed a Text-to-Voice Converter using HTML, CSS, and JavaScript, allowing users to convert written text into natural-sounding speech. Integrated speech synthesis for accessibility and user-friendly audio control features. <a class="work" href="https://nagarajgb11.github.io/Text-To-Speech-Convertor/">click here</a></p>
+        </div>
+        
+        
+      </div>
+
+        
+         <div>
+        <button id="toggleBtn" onclick="toggleProjects()">See More</button>
+    </div>
+    </div>
+</div>
+<div id="certificates">
+    <div class="container2">
+        <div>  <h1 class="sub-ctitle">Certificates</h1></div>
+        
+        
+        <div class="achive">
+      
+        <div class="certificate">
+            <img src="images/aws.jpeg" alt="Certificate 1">
+        </div>
+        <div class="certificate">
+            <img src="images/django.jpeg" alt="Certificate 2">
+        </div>
+    </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-c1title">Contact Me</h1>
+                <p><i class="fa fa-paper-plane-o"></i>nagarajgb2001@gmail.com</p>
+                <p><i class="fa fa-phone"></i>+91 8792597294</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nagaraj-g-b-n11"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://github.com/nagarajgb11"><i class="fa fa-github-square"></i></a>
+                </div>
+                <a href="images/NagarajResume_a.pdf" download class="btn btn2" >Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Youe Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                    
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>  
+
+
+ <script src="scrip.js">
+ </script>   
+</body>
+</html>
