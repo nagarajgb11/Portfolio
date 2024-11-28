@@ -164,6 +164,9 @@ font-size: 16px;
 .edu{
     color: #ffc800;
 }
+.skill{
+    color: #ffc800;
+}
 .tab-contents{
     display: none;
 }
@@ -239,7 +242,7 @@ padding: 10px 100px;
     margin-top: -10px;
     padding: 10px 16px;
     font-size: 0.9rem;
-    background-color: #f39c12;
+    background-color: #ffc800;
     color: #000;
     border: none;
     border-radius: 5px;
@@ -253,7 +256,7 @@ padding: 10px 100px;
 }
 
 #toggleBtn:hover {
-    background-color: #e67e22; 
+    background-color: #ffc800; 
 }
 
 
@@ -320,6 +323,32 @@ padding: 10px 100px;
 }
 .details{
     justify-content: left;
+}
+#toggleBtn2 {
+    margin-top: 50px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    background-color: #ffc800;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+   align-self: center;
+    margin-left:550px;
+    
+    
+   
+}
+
+#toggleBtn2:hover {
+    background-color: #ffc800; 
+}
+
+
+.hidden2 {
+    display: none;
+   
 }
 /* Contact */
 
