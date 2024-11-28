@@ -36,6 +36,28 @@ function toggleProjects() {
     }
 }
 
+function toggleProjects1() {
+    const allCertificates = document.querySelectorAll('.certificate');
+    const toggleBtn = document.getElementById('toggleBtn2');
+    
+    // Check if the button is currently set to "See More" or "Show Less"
+    if (toggleBtn.textContent === "See More") {
+        // Show all project boxes
+        allCertificates.forEach(certificate => {
+            certificate.classList.remove('hidden2');
+        });
+        toggleBtn.textContent = "Show Less";
+    } else {
+        // Hide extra project boxes, only the first three will be visible
+        allCertificates.forEach((certificate, index) => {
+            if (index >= 2) {
+                certificate.classList.add('hidden2');
+            }
+        });
+        toggleBtn.textContent = "See More";
+    }
+}
+
 
 var side = document.getElementById("sidemenu")
 
